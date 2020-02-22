@@ -1,0 +1,52 @@
+html {
+
+    background: #018DED url(https://images.unsplash.com/photo-1565378747065-0fec7d7b4975?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    font-size: 10px;
+    text-align: center;
+
+}
+
+body{
+
+    align-items: center;
+    display:flex;
+    flex:1;
+    font-size: 2rem;
+    min-height: 100vh;
+
+}
+
+.clock{
+    border: 20px solid white;
+    border-radius: 50%;
+    box-shadow:
+    0 0 0px 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+    height: 30rem;
+    margin: 50px auto;
+    padding: 2rem;
+    position: relative;
+    width: 30rem;
+}
+
+.clock-face{
+    height: 100%;
+    position: relative;
+    transform: translateY(-3px); /* the height of the clock hands */
+}
+
+.hand {
+    background: black;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+    width: 50%;
+}
